@@ -1,8 +1,27 @@
-
+body{
+    color:white;
+    
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
 
 .navbar{
     border-bottom: 2px solid gray;
 }
+.navbar-text{
+    color: black;
+    font-size: 1.7em;;
+}
+
+
 .list-item  {
     display: inline-block;
     list-style: none;
@@ -14,20 +33,41 @@
 }
 .list-item a{
     text-decoration: none;
-    color:#000000;
+    color:black;
+    font-weight: 600;
     padding-left: 100px;
     
 }
 .list-item:hover{
-    text-decoration: underline;
+    margin-top: 5px;
+    text-decoration-line: underline;
     
 }
 .main{
-    height: 300px;
-  
+    text-align: center;
+    height: 500px;
+    margin-top: 100px;
+ 
+}
+.image{
+    animation: fadeIn 2s linear;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .main h1{
     margin-top: 50px;
+    animation: fadeIn 2s linear;
+}
+.main h5{
+    animation: fadeIn 2s linear;
 }
 .Btn{
     width: 200px;
@@ -39,33 +79,90 @@
     transition: ease-in-out;
     transition-duration: 1s;
 }
-.aboutme{
-     background-color: aliceblue;
-}
 .aboutme h3{
     margin:30px;
-   
 }
 .aboutme p{
-    margin-left: 200px;
+    margin-left: 20px;
     display: inline-block;
-    
-   
 }
-
+.aboutme{
+    
+    border-radius: 30px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.mission{
+    
+    border-radius: 30px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
 .mission h3{
-    margin:50px;
+    margin-top:50px;
+    height: 100px;
 }
 .mission p{
-    margin-left: 110px;
+    padding: 20px;
+}
+.missionhead{
+    margin-left: 60px;
     
 }
+.skill-body{
+   
+    margin-left: 80px;
+    border-radius: 30px;
+    padding: 20px;  
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.h3{
+    margin-left: 50px;
+}
 .card {
+    margin-left: 200px;
+  height: 400px;
     margin-bottom: 20px;
     transition: transform 0.3s;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .card:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.myprojects{
+    border-radius: 30px;
+    height: 600px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.contact-box{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #84fab0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
